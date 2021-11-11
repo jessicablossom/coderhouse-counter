@@ -14,5 +14,14 @@ body {
 p {
   text-align: center;
   width: 50%;
-  background-color: lightgrey;
+}
+
+img {
+  width: 15%;
+}
+
+input {
+  height: 20px;
+  width: 150px;
+  border: 1px solid lightgrey;
 }

@@ -3,17 +3,16 @@ var app = new Vue({
   data: {
     message: "Hola Coder, Hola Mundo!",
     a: 20,
-    b: true,
+    b: 30,
+    textHtml: `<h1>soy un tag de html</h1>`,
+    input: "",
+    sourceImage: "https://vuejs.org/images/logo.svg",
+    link: "https://vuejs.org/",
   },
   methods: {
-    calculoMatematico() {
-      return this.a + this.b;
+    funcionAlert() {
+      alert("alerta");
     },
   },
-  computed: {
-    duplicar() {
-      this.imprimirEnConsola();
-      return this.a * 2;
-    },
-  },
+  computed: {},
 });
