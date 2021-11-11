@@ -17,9 +17,13 @@
   </head>
   <body>
     <div id="app">
-      <h1>{{ message }}</h1>
-      <p>{{ a }}</p>
-      <p>{{b}}</p>
+      <img v-bind:src="sourceImage" alt="" srcset="" />
+      <h1 v-text="message"></h1>
+      <div v-html="textHtml"></div>
+      <input v-model="input" type="text" />
+      <p v-bind="input">{{ input }}</p>
+      <button v-on:click="funcionAlert">boton</button>
+      <p>Suma: {{ a + b }}</p>
     </div>
   </body>
 </html>
