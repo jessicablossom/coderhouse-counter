@@ -1,18 +1,20 @@
 var app = new Vue({
   el: "#app",
   data: {
-    message: "Hola Coder, Hola Mundo!",
-    a: 20,
-    b: 30,
-    textHtml: `<h1>soy un tag de html</h1>`,
-    input: "",
-    sourceImage: "https://vuejs.org/images/logo.svg",
-    link: "https://vuejs.org/",
+    alumna: "Jessica Francavilla",
+    initial: 0,
+    total: 0,
   },
   methods: {
-    funcionAlert() {
-      alert("alerta");
+    decreaseCounter: function () {
+      if (this.initial > 0) {
+        this.initial -= 1;
+      }
     },
+    incrementCounter: function () {
+      this.initial += 1;
+    },
+    incrementTotal: function () {},
   },
   computed: {},
 });

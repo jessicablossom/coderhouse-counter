@@ -17,13 +17,15 @@
   </head>
   <body>
     <div id="app">
-      <img v-bind:src="sourceImage" alt="" srcset="" />
-      <h1 v-text="message"></h1>
-      <div v-html="textHtml"></div>
-      <input v-model="input" type="text" />
-      <p v-bind="input">{{ input }}</p>
-      <button v-on:click="funcionAlert">boton</button>
-      <p>Suma: {{ a + b }}</p>
+      <div class="container">
+        <h1>Contador</h1>
+        <h3>{{alumna}}</h3>
+        <div class="counter">
+          <button class="btn" v-on:click="decreaseCounter">-</button>
+          <h1>{{ initial }}</h1>
+          <button class="btn" v-on:click="incrementCounter">+</button>
+        </div>
+      </div>
     </div>
   </body>
 </html>
